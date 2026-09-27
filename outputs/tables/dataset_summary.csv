@@ -1,0 +1,11 @@
+metric,value
+studies,1975
+targets,25
+series_rows,6294
+unique_series,6294
+coordinate_rows,48692
+total_possible_labels,49375
+missing_labels,572
+unique_series_descriptions,3
+unique_coordinate_conditions,5
+unique_coordinate_levels,5

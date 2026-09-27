@@ -1,0 +1,50 @@
+CONTRIBUICAO INDIVIDUAL — LUIS FELIPE XAVIER FALCAO
+TP1 — RSNA 2024 Lumbar Spine Degenerative Classification
+
+Atividades desenvolvidas:
+
+1. Acesso e inspeção dos dados tabulares oficiais do desafio.
+2. Validação de consistência dos arquivos de rótulos, séries e coordenadas.
+3. Análise exploratória dos dados e caracterização do desbalanceamento.
+4. Análise de valores ausentes, condições, níveis e séries de ressonância.
+5. Geração de tabelas e figuras de EDA.
+6. Definição e implementação de amostragem reproduzível com semente 42.
+7. Seleção de uma amostra final de 500 estudos.
+8. Preservação explícita de casos Severe extremamente raros.
+9. Definição do protocolo de validação no nível de study_id.
+10. Geração e congelamento de 5 folds com 100 estudos cada.
+11. Validação de ausência de sobreposição de study_id entre folds.
+12. Implementação do baseline trivial de classe majoritária.
+13. Cálculo de Accuracy, Balanced Accuracy, F1 Macro,
+    F1 Weighted e Log-loss.
+14. Geração de previsões out-of-fold para todos os rótulos válidos.
+15. Geração dos artefatos de referência para comparação com os
+    modelos clássicos posteriores.
+16. Auditoria automatizada final dos artefatos produzidos.
+
+RESULTADOS DO BASELINE TRIVIAL
+
+Accuracy:
+0.7562 ± 0.0170
+
+Balanced Accuracy:
+0.3333 ± 0.0000
+
+F1 Macro:
+0.2838 ± 0.0036
+
+F1 Weighted:
+0.6608 ± 0.0232
+
+Log-loss:
+0.6377 ± 0.0369
+
+IMPORTANTE PARA A CONTINUIDADE DO GRUPO
+
+- Utilizar a amostra definida em data/processed/sample_studies.csv.
+- Utilizar obrigatoriamente os folds de data/processed/folds.csv.
+- Todas as imagens e séries de um study_id devem herdar o mesmo fold.
+- NÃO criar um novo train_test_split.
+- Os modelos posteriores devem ser comparados contra o baseline
+  trivial produzido nesta contribuição.
+- Os dados brutos do Kaggle não estão incluídos neste pacote.

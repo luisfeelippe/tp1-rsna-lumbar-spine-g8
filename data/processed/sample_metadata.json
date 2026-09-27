@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "sample_size": 500,
+  "total_studies": 1975,
+  "eligible_studies": 1972,
+  "mandatory_rare_severe_studies": 50,
+  "rare_severe_threshold": 20,
+  "eligibility": [
+    "study_id presente em train_label_coordinates.csv",
+    "presenca de Sagittal T1",
+    "presenca de Sagittal T2/STIR",
+    "presenca de Axial T2"
+  ]
+}

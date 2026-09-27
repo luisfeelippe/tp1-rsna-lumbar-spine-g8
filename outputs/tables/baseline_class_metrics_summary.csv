@@ -1,0 +1,4 @@
+severity,sensitivity_mean,sensitivity_std,specificity_mean,specificity_std
+Normal/Mild,1.0,0.0,0.0,0.0
+Moderate,0.0,0.0,1.0,0.0
+Severe,0.0,0.0,1.0,0.0

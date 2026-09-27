@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "n_splits": 5,
+  "sample_size": 500,
+  "unit_of_split": "study_id",
+  "splitter": "StratifiedKFold",
+  "shuffle": true,
+  "stratification_key": "study_stratum, com casos obrigatorios de Severe raro separados em Severe_rare_mandatory",
+  "important_rule": "Todas as imagens/series de um study_id devem herdar o mesmo fold."
+}

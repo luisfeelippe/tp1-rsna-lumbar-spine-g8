@@ -1,0 +1,26 @@
+{
+  "baseline": "classe majoritaria por alvo",
+  "probabilistic_baseline": "prevalencia das classes no conjunto de treino da dobra",
+  "fit_scope": "classe majoritaria e probabilidades calculadas somente nos 4 folds de treino",
+  "validation": "5-fold cross-validation",
+  "split_unit": "study_id",
+  "labels": [
+    "Normal/Mild",
+    "Moderate",
+    "Severe"
+  ],
+  "metrics": [
+    "accuracy",
+    "balanced_accuracy",
+    "f1_macro",
+    "f1_weighted",
+    "log_loss"
+  ],
+  "balanced_accuracy_definition": "macro recall calculado sobre as tres classes fixas: Normal/Mild, Moderate e Severe",
+  "log_loss_class_order": [
+    "Moderate",
+    "Normal/Mild",
+    "Severe"
+  ],
+  "missing_labels": "ignorados no treino e na avaliacao do alvo correspondente"
+}
