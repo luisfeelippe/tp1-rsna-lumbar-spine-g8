@@ -1,0 +1,43 @@
+CONTRIBUICAO INDIVIDUAL — GABRIEL SAMILO PINTO DE OLIVEIRA
+TP1 — RSNA 2024 Lumbar Spine Degenerative Classification
+
+Atividades desenvolvidas:
+
+1. Levantamento bibliográfico e fichamento das 5 referências base focadas em radiômica e métodos clássicos.
+2. Implementação de Kernel em nuvem para empacotamento da amostra (7.5 GB), superando restrições da API.
+3. Automação do download reprodutível e extração local do conjunto de imagens DICOM da amostra (Script 07).
+4. Construção do pipeline de pré-processamento de imagens médicas (Script 08) utilizando a biblioteca pydicom.
+5. Correção de escala de intensidade via RescaleSlope e RescaleIntercept extraídos dos metadados.
+6. Aplicação de normalização robusta de contraste com corte nos percentis 1% e 99% e conversão para 8-bits.
+7. Extração geométrica de Regiões de Interesse (ROIs) fixas de 64x64 pixels utilizando coordenadas de anotação.
+8. Extração da primeira família de características manuais (GLCM - Gray-Level Co-occurrence Matrix) (Script 09).
+9. Cálculo das propriedades de textura GLCM: Contraste, Dissimilaridade, Homogeneidade, Energia e Correlação.
+10. Extração da segunda família de características manuais (LBP - Local Binary Patterns) invariante à rotação.
+11. Consolidação das features em um dataset tabular relacionável.
+12. Redação das seções de Introdução, Trabalhos Relacionados e Metodologia do artigo final (template SBC).
+
+RESULTADOS DA ENGENHARIA DE CARACTERÍSTICAS
+
+ROIs extraídas com sucesso:
+12.369 recortes limpos (taxa de falha 0%)
+
+Famílias de descritores implementadas:
+2 (GLCM e LBP)
+
+Vetor de características final:
+15 colunas numéricas geradas por ROI
+
+Artefatos gerados:
+data/interim/rois/ (12.369 imagens PNG)
+data/processed/rois_metadata.csv
+data/processed/features_glcm_lbp.csv
+
+IMPORTANTE PARA A CONTINUIDADE DO GRUPO
+
+* Utilizar o arquivo data/processed/features_glcm_lbp.csv como base de características para os modelos.
+* Realizar o merge (junção) destas features obrigatoriamente com o data/processed/folds.csv produzido pelo Luis, 
+utilizando as chaves primárias.
+* Implementar a terceira e última família de descritores manuais exigida pelas regras do trabalho.
+* O ajuste de hiperparâmetros (C, gamma, n_estimators, etc.) deve ocorrer estritamente nos dados de treino de cada dobra.
+* Os modelos finais (SVM, Random Forest, etc.) devem ser comparados com o baseline trivial do Luis, focando nos ganhos 
+em Balanced Accuracy e F1 Macro.
