@@ -5,7 +5,7 @@ Projeto desenvolvido para a disciplina de Tópicos Especiais em Sistemas de Info
 ## Equipe (Grupo G8)
 * **Luis Felipe Xavier Falcão:** Fundação de dados, amostragem, pipeline de validação e baseline trivial.
 * **Gabriel Samilo Pinto de Oliveira:** Aquisição automatizada das imagens, pré-processamento DICOM, recorte de ROIs e engenharia de características (GLCM e LBP).
-* **Samuel Brito da Silva:** Treinamento de modelos clássicos, hiperparâmetros, extração da 3ª família de features e análise de erros.
+* **Samuel Brito da Silva:** Extração das famílias HOG e intensidade, grade descritor × modelo com CV aninhada, ajuste de hiperparâmetros, ablação, análise de erros e figuras.
 
 ---
 
@@ -77,8 +77,41 @@ python scripts/09_extrair_descritores.py
 
 ```
 
+**4. Reprodução da Fase 3 (3ª família, modelos, ablação e análise de erros):**
+
+Requer a pasta `data/interim/rois/` (gerada pelo script 08).
+
+```bash
+# Famílias 3 e 4: HOG (gradiente) e intensidade de 1ª ordem
+python scripts/10_extrair_hog_intensidade.py
+
+# Grade descritor x modelo (LR, SVM, RF, HGB) com CV aninhada nos folds congelados
+python scripts/11_treinar_modelos.py
+
+# Estudo de ablação sobre a melhor configuração da grade
+python scripts/12_ablacao.py
+
+# Análise de erros + figuras 05-08 do artigo
+python scripts/13_analise_erros_figuras.py
 ```
 
+O script 11 guarda as previsões out-of-fold em `outputs/tables/oof/` e reaproveita esse cache
+se for interrompido; use `--forcar` para refazer tudo e `--rapido` para um teste com grades reduzidas.
 
+---
 
-```
+## Fase 3: Modelagem, Ablação e Análise de Erros
+
+* **Descritores adicionais:** HOG (9 orientações, células 16×16, blocos 2×2, 324 valores) e intensidade de
+  primeira ordem (média, desvio, assimetria, curtose, entropia, energia, percentis, IQR e contraste centro/borda,
+  18 valores), extraídos das mesmas ROIs 64×64. Correção no script 09: histograma LBP com número fixo de bins (P+2).
+* **Formulação:** unidade de amostra = ROI (study_id, condição, nível); saída = severidade em 3 classes.
+  Um modelo por condição, com one-hot do nível vertebral como covariável.
+* **Modelos:** Regressão Logística, SVM RBF, Random Forest e HistGradientBoosting, todos com pesos de classe
+  balanceados. Imputação, padronização e PCA (95% da variância, conjuntos com mais de 50 colunas) ficam dentro do
+  `Pipeline`, ajustados apenas no treino.
+* **Protocolo:** folds externos de `folds.csv`; hiperparâmetros escolhidos por `GridSearchCV` (F1 macro) com
+  `StratifiedGroupKFold(3)` agrupado por `study_id` dentro do treino de cada fold. Rótulos sem ROI recebem a
+  prevalência do treino (mesma regra do baseline), para que os 12.387 rótulos sejam avaliados.
+* **Métricas:** as mesmas do baseline, com a mesma agregação (fold × alvo → média nos 25 alvos → média ± desvio
+  nos 5 folds), mais a log-loss ponderada da competição (pesos 1/2/4). Código comum em `scripts/comum.py`.

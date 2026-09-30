@@ -1,0 +1,26 @@
+condition,fold,cv_interno_f1_macro,min_samples_leaf
+Spinal Canal Stenosis,0,0.4704468216224267,5
+Spinal Canal Stenosis,1,0.4679795559572019,5
+Spinal Canal Stenosis,2,0.43518461951489623,5
+Spinal Canal Stenosis,3,0.43299500251544104,5
+Spinal Canal Stenosis,4,0.4797435013085864,5
+Left Neural Foraminal Narrowing,0,0.44098947514814446,5
+Left Neural Foraminal Narrowing,1,0.4376635602818218,5
+Left Neural Foraminal Narrowing,2,0.45000375392068787,5
+Left Neural Foraminal Narrowing,3,0.45146201028295013,5
+Left Neural Foraminal Narrowing,4,0.47386145427815585,5
+Right Neural Foraminal Narrowing,0,0.45876666366652824,5
+Right Neural Foraminal Narrowing,1,0.45258588568867203,5
+Right Neural Foraminal Narrowing,2,0.46922198038312474,5
+Right Neural Foraminal Narrowing,3,0.473536339118698,5
+Right Neural Foraminal Narrowing,4,0.4540794851475684,5
+Left Subarticular Stenosis,0,0.5190198489521342,5
+Left Subarticular Stenosis,1,0.5121848533317773,5
+Left Subarticular Stenosis,2,0.5319439531051997,5
+Left Subarticular Stenosis,3,0.5375903578699811,5
+Left Subarticular Stenosis,4,0.49725881045959897,5
+Right Subarticular Stenosis,0,0.528556337603468,5
+Right Subarticular Stenosis,1,0.530722924779845,5
+Right Subarticular Stenosis,2,0.5242465868432321,5
+Right Subarticular Stenosis,3,0.5301207635153634,5
+Right Subarticular Stenosis,4,0.5200549161516538,5

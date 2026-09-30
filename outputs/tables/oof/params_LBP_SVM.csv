@@ -1,0 +1,26 @@
+condition,fold,cv_interno_f1_macro,C,gamma
+Spinal Canal Stenosis,0,0.4473443062781796,10.0,0.01
+Spinal Canal Stenosis,1,0.4457575192797291,10.0,0.01
+Spinal Canal Stenosis,2,0.4346408018341286,10.0,scale
+Spinal Canal Stenosis,3,0.4238816772359781,10.0,scale
+Spinal Canal Stenosis,4,0.4560601824221641,10.0,scale
+Left Neural Foraminal Narrowing,0,0.4230019367997246,10.0,scale
+Left Neural Foraminal Narrowing,1,0.4092484703236164,10.0,scale
+Left Neural Foraminal Narrowing,2,0.41912590329867494,10.0,scale
+Left Neural Foraminal Narrowing,3,0.40606513978879316,10.0,scale
+Left Neural Foraminal Narrowing,4,0.4232175745470177,10.0,scale
+Right Neural Foraminal Narrowing,0,0.407732556280279,10.0,scale
+Right Neural Foraminal Narrowing,1,0.40663402843395424,10.0,scale
+Right Neural Foraminal Narrowing,2,0.4109980339168569,10.0,scale
+Right Neural Foraminal Narrowing,3,0.4059119457131007,1.0,scale
+Right Neural Foraminal Narrowing,4,0.40629885554470585,1.0,0.01
+Left Subarticular Stenosis,0,0.47572938458260383,10.0,0.01
+Left Subarticular Stenosis,1,0.46680037044144274,1.0,scale
+Left Subarticular Stenosis,2,0.47272728678812553,10.0,scale
+Left Subarticular Stenosis,3,0.4815269996332158,1.0,scale
+Left Subarticular Stenosis,4,0.46301776489003954,1.0,scale
+Right Subarticular Stenosis,0,0.49291316909808097,10.0,scale
+Right Subarticular Stenosis,1,0.4564481540229532,10.0,scale
+Right Subarticular Stenosis,2,0.47594203279685665,10.0,0.01
+Right Subarticular Stenosis,3,0.45072832022782605,10.0,0.01
+Right Subarticular Stenosis,4,0.4619352175404989,1.0,scale

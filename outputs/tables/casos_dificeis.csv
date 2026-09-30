@@ -1,0 +1,48 @@
+study_id,fold,target,y_true,y_pred,prob_normal_mild,prob_moderate,prob_severe,fonte,condition,level
+3029953735,1,spinal_canal_stenosis_l5_s1,Severe,Normal/Mild,0.9659828272524512,0.0194831870313352,0.0145339857162134,modelo,Spinal Canal Stenosis,L5/S1
+719139061,0,spinal_canal_stenosis_l5_s1,Severe,Normal/Mild,0.9548060366163412,0.0193665075430134,0.0258274558406453,modelo,Spinal Canal Stenosis,L5/S1
+2782244888,0,spinal_canal_stenosis_l4_l5,Severe,Normal/Mild,0.9185870197298256,0.0664327377021385,0.0149802425680358,modelo,Spinal Canal Stenosis,L4/L5
+3478119785,3,right_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.9079970892071364,0.0783821874258524,0.013620723367011,modelo,Right Neural Foraminal Narrowing,L5/S1
+1650340034,1,spinal_canal_stenosis_l4_l5,Severe,Normal/Mild,0.8921973218626088,0.0647439487794129,0.0430587293579779,modelo,Spinal Canal Stenosis,L4/L5
+2763838004,0,spinal_canal_stenosis_l5_s1,Severe,Normal/Mild,0.8903630441585448,0.0392633734706323,0.0703735823708228,modelo,Spinal Canal Stenosis,L5/S1
+1985516615,4,spinal_canal_stenosis_l5_s1,Severe,Normal/Mild,0.8740775127636746,0.0472801008014743,0.0786423864348511,modelo,Spinal Canal Stenosis,L5/S1
+660253947,4,right_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.8719914323690161,0.1047695088998462,0.0232390587311376,modelo,Right Neural Foraminal Narrowing,L5/S1
+4284048608,3,left_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.8671285108734312,0.1215024242612017,0.0113690648653669,modelo,Left Neural Foraminal Narrowing,L5/S1
+2746735779,4,spinal_canal_stenosis_l5_s1,Severe,Normal/Mild,0.8622902557457711,0.115167161847768,0.0225425824064609,modelo,Spinal Canal Stenosis,L5/S1
+511857239,4,right_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.8594803978626743,0.095273440278063,0.0452461618592628,modelo,Right Neural Foraminal Narrowing,L5/S1
+58813022,4,right_subarticular_stenosis_l4_l5,Severe,Normal/Mild,0.8588147341403859,0.1339627539997679,0.007222511859846,modelo,Right Subarticular Stenosis,L4/L5
+3478119785,3,left_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.8535854561104511,0.1399302984560014,0.0064842454335474,modelo,Left Neural Foraminal Narrowing,L5/S1
+341058399,2,left_subarticular_stenosis_l5_s1,Severe,Normal/Mild,0.8402950437801828,0.1364843478329271,0.0232206083868902,modelo,Left Subarticular Stenosis,L5/S1
+3065863143,2,spinal_canal_stenosis_l1_l2,Severe,Normal/Mild,0.7920858588561991,0.1623153977983733,0.0455987433454275,modelo,Spinal Canal Stenosis,L1/L2
+1670552101,2,right_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.7847222161426046,0.1461957688538722,0.0690820150035232,modelo,Right Neural Foraminal Narrowing,L5/S1
+344297746,2,left_neural_foraminal_narrowing_l4_l5,Severe,Normal/Mild,0.7759934867951721,0.2058689306701015,0.0181375825347264,modelo,Left Neural Foraminal Narrowing,L4/L5
+2713141511,2,left_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.7728014392034138,0.1754595388710988,0.0517390219254874,modelo,Left Neural Foraminal Narrowing,L5/S1
+1820866003,0,right_subarticular_stenosis_l4_l5,Severe,Normal/Mild,0.7624518691093776,0.2000338283312278,0.0375143025593947,modelo,Right Subarticular Stenosis,L4/L5
+2510853598,2,right_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.7610746311455534,0.130143004927612,0.1087823639268345,modelo,Right Neural Foraminal Narrowing,L5/S1
+4055006120,4,right_neural_foraminal_narrowing_l3_l4,Severe,Normal/Mild,0.7590677794835767,0.2174679078945353,0.023464312621888,modelo,Right Neural Foraminal Narrowing,L3/L4
+607371793,3,spinal_canal_stenosis_l2_l3,Severe,Normal/Mild,0.7511126737387934,0.1760681328254807,0.0728191934357255,modelo,Spinal Canal Stenosis,L2/L3
+1106510276,0,spinal_canal_stenosis_l2_l3,Severe,Normal/Mild,0.7503977944561334,0.0970490559794743,0.152553149564392,modelo,Spinal Canal Stenosis,L2/L3
+1855454452,4,left_neural_foraminal_narrowing_l4_l5,Severe,Normal/Mild,0.7498999543364147,0.2184859885632812,0.031614057100304,modelo,Left Neural Foraminal Narrowing,L4/L5
+3065863143,2,right_neural_foraminal_narrowing_l2_l3,Severe,Normal/Mild,0.7464946438104525,0.1971076290710306,0.0563977271185167,modelo,Right Neural Foraminal Narrowing,L2/L3
+3573227658,1,right_subarticular_stenosis_l5_s1,Severe,Normal/Mild,0.7457529179575426,0.2350736338112413,0.0191734482312158,modelo,Right Subarticular Stenosis,L5/S1
+1106510276,0,spinal_canal_stenosis_l1_l2,Severe,Normal/Mild,0.744428569482784,0.1387043014406601,0.1168671290765559,modelo,Spinal Canal Stenosis,L1/L2
+4075603869,4,right_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.7409303612528363,0.2065301092545954,0.052539529492568,modelo,Right Neural Foraminal Narrowing,L5/S1
+4167991881,1,right_neural_foraminal_narrowing_l4_l5,Severe,Normal/Mild,0.739047446526972,0.2556646103028145,0.0052879431702136,modelo,Right Neural Foraminal Narrowing,L4/L5
+1246626043,2,left_subarticular_stenosis_l5_s1,Severe,Normal/Mild,0.736323911297546,0.1835971047301454,0.0800789839723084,modelo,Left Subarticular Stenosis,L5/S1
+2597449301,1,right_subarticular_stenosis_l5_s1,Severe,Normal/Mild,0.7360402870380135,0.2341850498668219,0.0297746630951646,modelo,Right Subarticular Stenosis,L5/S1
+344297746,2,right_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.7360043088413201,0.2013267575262913,0.0626689336323885,modelo,Right Neural Foraminal Narrowing,L5/S1
+480338765,2,left_subarticular_stenosis_l4_l5,Severe,Normal/Mild,0.735730860885071,0.2167571562131603,0.0475119829017688,modelo,Left Subarticular Stenosis,L4/L5
+1422523769,2,spinal_canal_stenosis_l3_l4,Severe,Normal/Mild,0.7355508986979385,0.1365897615751364,0.1278593397269251,modelo,Spinal Canal Stenosis,L3/L4
+2059107661,0,spinal_canal_stenosis_l4_l5,Severe,Normal/Mild,0.7318248386003379,0.1286897518007146,0.1394854095989474,modelo,Spinal Canal Stenosis,L4/L5
+976356113,0,right_neural_foraminal_narrowing_l1_l2,Severe,Normal/Mild,0.7192715410217101,0.1883306854900192,0.0923977734882706,modelo,Right Neural Foraminal Narrowing,L1/L2
+2746735779,4,left_subarticular_stenosis_l4_l5,Severe,Normal/Mild,0.7115590509248115,0.2107747793065308,0.0776661697686575,modelo,Left Subarticular Stenosis,L4/L5
+3065863143,2,left_neural_foraminal_narrowing_l3_l4,Severe,Normal/Mild,0.707320159328469,0.2068939270158905,0.0857859136556404,modelo,Left Neural Foraminal Narrowing,L3/L4
+1698156042,4,left_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.688277028934195,0.1985023483189635,0.1132206227468413,modelo,Left Neural Foraminal Narrowing,L5/S1
+1314603564,3,right_subarticular_stenosis_l3_l4,Severe,Normal/Mild,0.6848763568003924,0.1848483801387971,0.1302752630608109,modelo,Right Subarticular Stenosis,L3/L4
+2336355021,0,right_subarticular_stenosis_l2_l3,Severe,Normal/Mild,0.6640489603461641,0.2279812129544172,0.1079698266994188,modelo,Right Subarticular Stenosis,L2/L3
+52695609,0,right_neural_foraminal_narrowing_l1_l2,Severe,Normal/Mild,0.6627596112971765,0.2187586835134459,0.1184817051893775,modelo,Right Neural Foraminal Narrowing,L1/L2
+1130460319,2,right_neural_foraminal_narrowing_l1_l2,Severe,Normal/Mild,0.6625225037317652,0.161179731729426,0.1762977645388087,modelo,Right Neural Foraminal Narrowing,L1/L2
+545140827,4,right_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.6616116077345098,0.1886585975137223,0.1497297947517678,modelo,Right Neural Foraminal Narrowing,L5/S1
+3559205221,1,right_neural_foraminal_narrowing_l1_l2,Severe,Normal/Mild,0.6526929572178887,0.2222211538061801,0.1250858889759311,modelo,Right Neural Foraminal Narrowing,L1/L2
+344297746,2,right_neural_foraminal_narrowing_l4_l5,Severe,Normal/Mild,0.6036912239899073,0.1562075071645339,0.2401012688455588,modelo,Right Neural Foraminal Narrowing,L4/L5
+2318756258,3,right_neural_foraminal_narrowing_l5_s1,Severe,Normal/Mild,0.5717344746776094,0.1890401919425101,0.2392253333798807,modelo,Right Neural Foraminal Narrowing,L5/S1

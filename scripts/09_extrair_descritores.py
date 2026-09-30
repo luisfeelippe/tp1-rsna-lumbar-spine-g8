@@ -66,7 +66,10 @@ for idx, row in metadata.iterrows():
         # --- FAMÍLIA 2: PADRÕES BINÁRIOS LOCAIS (LBP) ---
         lbp = feature.local_binary_pattern(img, LBP_POINTS, LBP_RADIUS, method='uniform')
         # Calcula o histograma do LBP para virar um vetor fixo de features numéricas
-        n_bins = int(lbp.max() + 1)
+        # CORRECAO (Samuel): numero de bins FIXO. O LBP 'uniform' com P vizinhos gera
+        # P+2 codigos (0..P+1). Usar lbp.max()+1 fazia algumas ROIs terem menos
+        # colunas e gerava NaN no CSV (1 ocorrencia em lbp_bin_9).
+        n_bins = LBP_POINTS + 2
         hist, _ = np.histogram(lbp.ravel(), bins=n_bins, range=(0, n_bins), density=True)
         
         for i, h_val in enumerate(hist):

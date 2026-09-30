@@ -1,0 +1,24 @@
+CONTRIBUICAO INDIVIDUAL — SAMUEL BRITO DA SILVA
+TP1 — RSNA 2024 Lumbar Spine Degenerative Classification
+
+Atividades desenvolvidas:
+
+1. Módulo comum de métricas (scripts/comum.py) reproduzindo exatamente a agregação do baseline
+   trivial (fold x alvo -> média nos 25 alvos -> média ± desvio nos folds), validado contra os
+   números do script 05, e inclusão da log-loss ponderada oficial da competição (pesos 1/2/4).
+2. Extração da família 3 (HOG, 324 valores) e da família 4 (intensidade de 1ª ordem, 18 valores)
+   sobre as 12.369 ROIs 64x64 (script 10), com saída compactada para caber no GitHub.
+3. Correção do número de bins do histograma LBP no script 09 (eliminação do NaN, causado por
+   uma ROI totalmente homogênea).
+4. Formulação da tarefa (ROI -> severidade; um modelo por condição; nível como covariável).
+5. Pipeline scikit-learn sem vazamento (imputação, padronização e PCA ajustados só no treino).
+6. Regressão Logística, SVM RBF, Random Forest e HistGradientBoosting com pesos de classe,
+   hiperparâmetros por validação cruzada aninhada (StratifiedGroupKFold por study_id).
+7. Grade completa descritor x modelo (5 conjuntos x 4 modelos) sobre os folds congelados,
+   comparada ao baseline trivial (script 11).
+8. Teste de sanidade com descritores aleatórios (desempenho no nível do acaso -> sem vazamento).
+9. Ablação: pesos de classe, nível vertebral, só nível, padronização e PCA (script 12).
+10. Análise de erros por classe, condição e nível; casos difíceis; figuras 05-08 (script 13).
+11. Verificação de reprodutibilidade com as versões fixadas no requirements.txt.
+12. Verificação das referências fichadas e correção dos dados bibliográficos.
+13. Atualização do README (Fase 3 e resultados), requirements.txt e .gitignore.

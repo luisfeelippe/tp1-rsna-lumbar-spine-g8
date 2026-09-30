@@ -1,0 +1,11 @@
+# Dados brutos e intermediarios pesados (obtidos pelos scripts 07 e 08; ver README)
+data/raw/
+data/interim/
+*.dcm
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
