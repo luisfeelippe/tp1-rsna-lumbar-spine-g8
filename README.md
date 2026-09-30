@@ -115,3 +115,30 @@ se for interrompido; use `--forcar` para refazer tudo e `--rapido` para um teste
   prevalência do treino (mesma regra do baseline), para que os 12.387 rótulos sejam avaliados.
 * **Métricas:** as mesmas do baseline, com a mesma agregação (fold × alvo → média nos 25 alvos → média ± desvio
   nos 5 folds), mais a log-loss ponderada da competição (pesos 1/2/4). Código comum em `scripts/comum.py`.
+
+### Resultados da Fase 3 (média ± desvio nos 5 folds; reproduzidos com as versões do `requirements.txt`, Python 3.12 e 3.14)
+
+F1 macro por conjunto de descritores e modelo (baseline trivial: 0,2838 ± 0,0036):
+
+| Conjunto | LR | SVM | RF | HGB |
+|---|---|---|---|---|
+| GLCM (5) | 0,3730 ± 0,0181 | 0,3686 ± 0,0082 | 0,4070 ± 0,0071 | 0,3996 ± 0,0073 |
+| LBP (10) | 0,3276 ± 0,0093 | 0,3358 ± 0,0205 | 0,3806 ± 0,0071 | 0,3788 ± 0,0112 |
+| HOG (324) | 0,5068 ± 0,0125 | 0,5492 ± 0,0255 | 0,4659 ± 0,0120 | 0,5022 ± 0,0114 |
+| INT (18) | 0,4843 ± 0,0187 | 0,4885 ± 0,0222 | 0,5005 ± 0,0141 | 0,4898 ± 0,0168 |
+| TODOS (357) | 0,5418 ± 0,0224 | **0,5670 ± 0,0250** | 0,5004 ± 0,0098 | 0,5418 ± 0,0176 |
+
+Tabela completa (todas as métricas, com desvios): `outputs/tables/grade_resultados_formatada.csv`.
+Melhor configuração: **TODOS + SVM RBF** — F1 macro 0,5670, acurácia balanceada 0,5977 e log-loss
+ponderada 0,6115 (baseline: 0,2838 / 0,3333 / 0,9720).
+
+Ablação sobre TODOS + SVM (`outputs/tables/ablacao_formatada.csv`): sem padronização −0,217 de F1 macro;
+sem pesos de classe −0,024 (acurácia balanceada −0,059); sem PCA −0,001; sem nível vertebral +0,002;
+só nível vertebral, sem imagem: 0,209 (acaso).
+
+Observação: Regressão Logística e SVM são determinísticos; RF e HGB podem variar na 4ª casa decimal
+entre sistemas operacionais/versões de Python, por diferenças numéricas de baixo nível.
+
+**Artefatos da Fase 3:** `outputs/tables/oof/` (previsões out-of-fold das 20 combinações),
+`grade_resultados*.csv`, `melhores_hiperparametros.csv`, `ablacao*.csv`, `analise_*.csv`,
+`casos_dificeis.csv` e as figuras `outputs/figures/05` a `08`.
