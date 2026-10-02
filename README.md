@@ -147,4 +147,4 @@ entre sistemas operacionais/versões de Python, por diferenças numéricas de ba
 
 ## Uso de IA
 
-O Claude (Anthropic) foi usado como apoio na estruturação do repositório e do README, na implementação e depuração do código e na revisão deste artigo. Os experimentos foram executados pela equipe em máquina local e, também, em notebook do Kaggle; todo o conteúdo foi revisado, testado e compreendido pela equipe.
+O Claude (Anthropic) foi usado como apoio na estruturação do repositório e do README, na implementação e depuração do código e na revisão do artigo. Os experimentos foram executados pela equipe em máquina local e, também, em notebook do Kaggle; todo o conteúdo foi revisado, testado e compreendido pela equipe.
