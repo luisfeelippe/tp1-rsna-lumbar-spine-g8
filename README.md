@@ -142,3 +142,9 @@ entre sistemas operacionais/versões de Python, por diferenças numéricas de ba
 **Artefatos da Fase 3:** `outputs/tables/oof/` (previsões out-of-fold das 20 combinações),
 `grade_resultados*.csv`, `melhores_hiperparametros.csv`, `ablacao*.csv`, `analise_*.csv`,
 `casos_dificeis.csv` e as figuras `outputs/figures/05` a `08`.
+
+---
+
+## Uso de IA
+
+O Claude (Anthropic) foi usado como apoio na estruturação do repositório e do README, na implementação e depuração do código e na revisão deste artigo. Os experimentos foram executados pela equipe em máquina local e, também, em notebook do Kaggle; todo o conteúdo foi revisado, testado e compreendido pela equipe.
